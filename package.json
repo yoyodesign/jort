@@ -6,6 +6,7 @@
 	"scripts": {
 		"commit": "git cz",
 		"coverage": "jest --coverage",
+		"docs": "typedoc",
 		"test": "jest"
 	},
 	"repository": {
@@ -28,6 +29,7 @@
 		"jest": "^26.2.2",
 		"prettier": "2.0.5",
 		"ts-jest": "^26.1.4",
+		"typedoc": "^0.17.8",
 		"typescript": "^3.9.7"
 	},
 	"config": {
