@@ -1,17 +1,18 @@
 {
 	"name": "@yoyo/jort",
-	"version": "0.0.1",
+	"version": "0.0.0-development",
 	"description": "Like Gort, but more JavaScripty.",
 	"main": "index.js",
 	"scripts": {
 		"commit": "git cz",
 		"coverage": "jest --coverage",
 		"docs": "typedoc",
-		"test": "jest"
+		"test": "jest",
+		"semantic-release": "semantic-release"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/yoyodesign/jort.git"
+		"url": "https://github.com/yoyodesign/jort.git"
 	},
 	"author": "",
 	"license": "MIT",
@@ -30,7 +31,8 @@
 		"prettier": "2.0.5",
 		"ts-jest": "^26.1.4",
 		"typedoc": "^0.17.8",
-		"typescript": "^3.9.7"
+		"typescript": "^3.9.7",
+		"semantic-release": "^17.1.1"
 	},
 	"config": {
 		"commitizen": {
