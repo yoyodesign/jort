@@ -1,5 +1,5 @@
 {
-	"name": "@yoyo/jort",
+	"name": "@yoyodesign/jort",
 	"version": "0.0.0-development",
 	"description": "Like Gort, but more JavaScripty.",
 	"main": "index.js",
@@ -48,5 +48,8 @@
 		"extends": [
 			"@commitlint/config-conventional"
 		]
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
