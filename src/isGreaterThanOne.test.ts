@@ -1,5 +1,5 @@
 import { isGreaterThanOne } from "./";
-import { IS_GREATER_THAN_ONE_NOT_A_NUMBER } from "./errorMessages";
+import { ErrorMessages } from "./ErrorMessages";
 
 test("true for numbers greater than 1", () => {
 	expect(isGreaterThanOne(2)).toBe(true);
@@ -20,13 +20,13 @@ test("throw exception when value is not a number", () => {
 
 	expect(() => {
 		isGreaterThanOne(undefined);
-	}).toThrow(IS_GREATER_THAN_ONE_NOT_A_NUMBER);
+	}).toThrow(ErrorMessages.IS_GREATER_THAN_ONE_NOT_A_NUMBER);
 
 	expect(() => {
 		isGreaterThanOne(null);
-	}).toThrow(IS_GREATER_THAN_ONE_NOT_A_NUMBER);
+	}).toThrow(ErrorMessages.IS_GREATER_THAN_ONE_NOT_A_NUMBER);
 
 	expect(() => {
 		isGreaterThanOne(NaN);
-	}).toThrow(IS_GREATER_THAN_ONE_NOT_A_NUMBER);
+	}).toThrow(ErrorMessages.IS_GREATER_THAN_ONE_NOT_A_NUMBER);
 });
