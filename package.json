@@ -1,19 +1,52 @@
 {
-  "name": "@yoyo/jort",
-  "version": "0.0.1",
-  "description": "Like Gort, but more JavaScripty.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yoyodesign/jort.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yoyodesign/jort/issues"
-  },
-  "homepage": "https://github.com/yoyodesign/jort#readme"
+	"name": "@yoyo/jort",
+	"version": "0.0.0-development",
+	"description": "Like Gort, but more JavaScripty.",
+	"main": "index.js",
+	"scripts": {
+		"commit": "git cz",
+		"coverage": "jest --coverage",
+		"docs": "typedoc",
+		"test": "jest",
+		"semantic-release": "semantic-release"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yoyodesign/jort.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/yoyodesign/jort/issues"
+	},
+	"homepage": "https://github.com/yoyodesign/jort#readme",
+	"devDependencies": {
+		"@commitlint/cli": "^9.1.2",
+		"@commitlint/config-conventional": "^9.1.1",
+		"@types/jest": "^26.0.8",
+		"commitizen": "4.1.2",
+		"cz-conventional-changelog": "3.2.0",
+		"husky": "^4.2.5",
+		"jest": "^26.2.2",
+		"prettier": "2.0.5",
+		"ts-jest": "^26.1.4",
+		"typedoc": "^0.17.8",
+		"typescript": "^3.9.7",
+		"semantic-release": "^17.1.1"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	}
 }
