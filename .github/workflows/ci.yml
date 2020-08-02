@@ -19,3 +19,8 @@ jobs:
       - run: npm install
       - run: npm test -- --coverage
       - uses: codecov/codecov-action@v1
+      - run: npm run docs
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
