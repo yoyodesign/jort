@@ -6,7 +6,7 @@
 	"scripts": {
 		"commit": "git cz",
 		"coverage": "jest --coverage",
-		"docs": "typedoc src --readme README.md",
+		"docs": "typedoc",
 		"test": "jest"
 	},
 	"repository": {
